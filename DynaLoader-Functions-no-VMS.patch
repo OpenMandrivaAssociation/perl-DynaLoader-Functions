@@ -1,0 +1,12 @@
+diff -up DynaLoader-Functions-0.003/lib/DynaLoader/Functions.pm.omv~ DynaLoader-Functions-0.003/lib/DynaLoader/Functions.pm
+--- DynaLoader-Functions-0.003/lib/DynaLoader/Functions.pm.omv~	2018-03-31 15:47:58.467843710 +0200
++++ DynaLoader-Functions-0.003/lib/DynaLoader/Functions.pm	2018-03-31 15:48:22.872955293 +0200
+@@ -49,7 +49,7 @@ use constant _IS_NETWARE => $^O eq "NetW
+ # It is presumed that VMS::Filespec will always be installed on VMS.
+ # It is not listed as a dependency of this module, because it is
+ # unavailable on other platforms.
+-require VMS::Filespec if _IS_VMS;
++# Removed in OpenMandriva because the RPM dependency generator still sees it
+ 
+ # Load Carp lazily, as do DynaLoader and other things at this level.
+ sub _carp { require Carp; Carp::carp(@_); }
