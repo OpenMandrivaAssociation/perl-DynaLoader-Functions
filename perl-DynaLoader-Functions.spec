@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/DynaLoader-Functions-%{version}.tar.gz
 Patch0:		DynaLoader-Functions-no-VMS.patch
+BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Test::More)
 
