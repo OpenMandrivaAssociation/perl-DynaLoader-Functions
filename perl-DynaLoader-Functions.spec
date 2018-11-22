@@ -3,10 +3,10 @@
 Summary:	Perl module for deconstructed dynamic C library loading
 Name:		perl-%{modname}
 Version:	0.003
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/DynaLoader::Functions
 Source0:	http://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/DynaLoader-Functions-%{version}.tar.gz
 Patch0:		DynaLoader-Functions-no-VMS.patch
 BuildRequires:	perl(Module::Build)
