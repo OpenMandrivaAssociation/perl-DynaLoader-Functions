@@ -21,7 +21,7 @@ Perl module for deconstructed dynamic C library loading
 %autosetup -n %{modname}-%{version} -p1
 
 %build
-%__perl Build.PL installdirs=vendor optimize="%{optflags}"
+perl Build.PL installdirs=vendor optimize="%{optflags}"
 ./Build
 
 %check
@@ -33,4 +33,4 @@ Perl module for deconstructed dynamic C library loading
 %files
 %doc Changes README
 %{perl_vendorlib}/*
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
